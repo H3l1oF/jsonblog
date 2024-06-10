@@ -1,0 +1,46 @@
+{ 
+    "posts": [
+    {
+        "id": 1,
+        "title": "Hello World 1", 
+        "body": "This is a test post 1",
+        "createdAt": "2020-10-01T00:00:00.000Z",
+        "updatedAt": "2020-10-01T00:00:00.000Z"
+    },
+    {
+        "id": 2,
+        "title": "Hello World 2",
+        "body": "This is a test post 2",
+        "createdAt": "2020-10-01T00:00:00.000Z",
+        "updatedAt": "2020-10-01T00:00:00.000Z"
+    },
+    {
+        "id": 3,
+        "title": "Hello World 3",
+        "body": "This is a test post 3",
+        "createdAt": "2020-10-01T00:00:00.000Z",
+        "updatedAt": "2020-10-01T00:00:00.000Z"
+    },
+    {
+        "id": 4,
+        "title": "Hello World 4",
+        "body": "This is a test post 4",
+        "createdAt": "2020-10-01T00:00:00.000Z",
+        "updatedAt": "2020-10-01T00:00:00.000Z"
+    },
+    {
+        "id": 5,
+        "title": "Hello World 5",
+        "body": "This is a test post 5",
+        "createdAt": "2020-10-01T00:00:00.000Z",
+        "updatedAt": "2020-10-01T00:00:00.000Z"
+    },
+    {
+        "id": 6,
+        "title": "Hello World 6",
+        "body": "This is a test post 6",
+        "createdAt": "2020-10-01T00:00:00.000Z",
+        "updatedAt": "2020-10-01T00:00:00.000Z"
+    }
+]
+}

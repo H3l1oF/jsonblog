@@ -3,7 +3,10 @@ import { Button, Card } from "react-bootstrap";
 
 function Cardnew({ title, content }) {
   return (
-    <Card style={{ width: "18rem", margin: "10px" }} className="bg-secondary text-white align-items-center">
+    <Card
+      style={{ width: "18rem", margin: "10px" }}
+      className="bg-secondary text-white align-items-center"
+    >
       <Card.Body>
         <Card.Title>{title}</Card.Title>
         <Card.Text>{content}</Card.Text>

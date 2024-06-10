@@ -1,26 +1,29 @@
-import React from 'react'
-import { useState, useEffect } from 'react'
-import Cardnew from './Cardnew'
+import React from "react";
+import { useState, useEffect } from "react";
+import Cardnew from "./Cardnew";
 
 function View() {
-  const [posts, setPosts] = useState([])
+  const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3030/posts')
-      .then(res => res.json())
-      .then(result => { 
-        setPosts(result)
-      })
-  }, [])
+    fetch("http://localhost:3030/posts")
+      .then((res) => res.json())
+      .then((result) => {
+        setPosts(result);
+      });
+  }, []);
+
+  const getFirstLine = (text) => {
+    return text.split("\n")[0];
+  };
 
   return (
     <div className="d-flex flex-wrap justify-content-around">
       {posts.map((i) => (
-        <Cardnew title={i.title} content={i.body} />
+        <Cardnew title={i.title} content={getFirstLine(i.body)} />
       ))}
     </div>
-
-  )
+  );
 }
 
-export default View
+export default View;

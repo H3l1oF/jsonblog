@@ -14,7 +14,7 @@ function Home() {
       If you want to view a post, you can click on the post title.
       <br />
       The post will be displayed in the view page.
-    </div> 
+    </div>
   );
 }
 

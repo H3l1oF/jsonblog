@@ -1,19 +1,49 @@
 import React from "react";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Add() {
+
+  const [id, setId] = useState("7");
+  const [title, setTitle] = useState("");
+  const [body, setBody] = useState("");
+  const [createAt, setCreateAt] = useState(new Date());
+  const [updateAt, setUpdateAt] = useState(new Date());
+  const navigate = useNavigate();
+
+  function send(event) {
+    event.preventDefault();
+    const options = {
+      method: 'POST',
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        id: id,
+        title: title,
+        body: body,
+        createdAt: createAt,
+        updatedAt: updateAt
+      }),
+    };
+    fetch("http://localhost:3030/posts", options);
+    navigate("/view");
+  }
+
+
   return (
     <div className="container border rounded border-dark p-3 bg-secondary text-white">
-      <form action="/add">
+      <form>
         <div className="form-group">
           <label>Title</label>
-          <input type="text" className="form-control" />
+          <input type="text" className="form-control" onChange={(e) => setTitle(e.target.value)} />
         </div>
         <div className="form-group">
           <label>Content</label>
-          <textarea className="form-control" rows="5"></textarea>
+          <textarea className="form-control" rows="5" onChange={(e) => setBody(e.target.value)}></textarea>
         </div>
         <div className="form-group mt-2">
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" onClick={send} className="btn btn-primary">
             <i className="bi bi-plus-circle"></i>
           </button>
           <button type="reset" className="btn btn-warning ms-2">

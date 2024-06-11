@@ -20,7 +20,7 @@ function View() {
   return (
     <div className="d-flex flex-wrap justify-content-around">
       {posts.map((i) => (
-        <Cardnew title={i.title} content={getFirstLine(i.body)} />
+        <Cardnew key={i.id} title={i.title} content={getFirstLine(i.body)} />
       ))}
     </div>
   );

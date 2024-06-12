@@ -1,15 +1,32 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+
 
 function Add() {
 
-  const [id, setId] = useState("7");
+  const formatDate = (date) => {
+    return date.toLocaleDateString("pt-PT", {
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+    });
+  };
+
+  const [id, setId] = useState("");
   const [title, setTitle] = useState("");
   const [body, setBody] = useState("");
-  const [createAt, setCreateAt] = useState(new Date());
-  const [updateAt, setUpdateAt] = useState(new Date());
+  const [createAt, setCreateAt] = useState(formatDate(new Date()));
+  const [updateAt, setUpdateAt] = useState(formatDate(new Date()));
   const navigate = useNavigate();
+
+  useEffect(() => {
+    fetch("http://localhost:3030/posts")
+      .then((res) => res.json())
+      .then((result) => {
+        setId((result.length + 2).toString());
+      });
+  }, []);
 
   function send(event) {
     event.preventDefault();

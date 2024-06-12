@@ -4,36 +4,43 @@
       "id": "1",
       "title": "Hello World 1",
       "body": "This is a test post 1,fdsfdsfs\ndfdfddfdddddddddddddddddddddddddddddfghfgfh",
-      "createdAt": "2020-10-01T00:00:00.000Z",
-      "updatedAt": "2020-10-01T00:00:00.000Z"
+      "createdAt": "12/06/2024",
+      "updatedAt": "12/06/2024"
     },
     {
       "id": "3",
       "title": "Hello World 3",
       "body": "This is a test post 3",
-      "createdAt": "2020-10-01T00:00:00.000Z",
-      "updatedAt": "2020-10-01T00:00:00.000Z"
+      "createdAt": "12/06/2024",
+      "updatedAt": "12/06/2024"
     },
     {
       "id": "4",
       "title": "Hello World 4",
       "body": "This is a test post 4",
-      "createdAt": "2020-10-01T00:00:00.000Z",
-      "updatedAt": "2020-10-01T00:00:00.000Z"
+      "createdAt": "12/06/2024",
+      "updatedAt": "12/06/2024"
     },
     {
       "id": "5",
       "title": "Hello World 5",
       "body": "This is a test post 5",
-      "createdAt": "2020-10-01T00:00:00.000Z",
-      "updatedAt": "2020-10-01T00:00:00.000Z"
+      "createdAt": "12/06/2024",
+      "updatedAt": "12/06/2024"
+    },
+    {
+      "id": "6",
+      "title": "ddddd",
+      "body": "dsdsdsdwkjqhcdjkwdh\ncdwcdhjdckcdwjh\ndccdkcjhde",
+      "createdAt": "12/06/2024",
+      "updatedAt": "12/06/2024"
     },
     {
       "id": "7",
-      "title": "dddd",
-      "body": "dddddd",
-      "createdAt": "2024-06-11T21:52:54.426Z",
-      "updatedAt": "2024-06-11T21:52:54.426Z"
+      "title": "dccd",
+      "body": "cddccdc\ncddcdc\ncd\ncdcddcdc\n",
+      "createdAt": "12/06/2024",
+      "updatedAt": "12/06/2024"
     }
   ]
 }

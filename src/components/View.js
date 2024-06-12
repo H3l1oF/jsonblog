@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import Cardnew from "./Cardnew";
 
+
 function View() {
   const [posts, setPosts] = useState([]);
 
@@ -13,14 +14,11 @@ function View() {
       });
   }, []);
 
-  const getFirstLine = (text) => {
-    return text.split("\n")[0];
-  };
 
   return (
     <div className="d-flex flex-wrap justify-content-around">
       {posts.map((i) => (
-        <Cardnew key={i.id} title={i.title} content={getFirstLine(i.body)} />
+        <Cardnew key={i.id} id={i.id} title={i.title} content={i.body} updatedAt={i.updatedAt} />
       ))}
     </div>
   );
